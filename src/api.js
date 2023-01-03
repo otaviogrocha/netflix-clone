@@ -1,4 +1,4 @@
-const api_key = "7e68a03a008f8e76ef441599d7558157"
+const API_KEY = "7e68a03a008f8e76ef441599d7558157"
 
 const categories = [
     {
@@ -40,10 +40,12 @@ const categories = [
 
 export const getMovies = async (path) => {
     try {        
-        let url = `https://api.themoviedb.org/3/${path}`;
+        let url = `https://api.themoviedb.org/3${path}`;
         const response = await fetch(url);
         return await response.json();
     } catch (error) {
         console.log("error geting movies", error)
     }
 }
+
+export default categories;
