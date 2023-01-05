@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { getMovies } from "../api";
+import { getMovie } from "../api";
 import "./Row.css";
 
 const baseImage = "https://image.tmdb.org/t/p/original/";
@@ -9,7 +9,7 @@ function Row({title, path, isLarge}) {
 
   const fetchMovies = async (_path) =>{
     try {
-        const data = await getMovies(_path);
+        const data = await getMovie(_path);
         console.log("data ", data)
         setMovies(data?.results);
     } catch (error) {
@@ -30,7 +30,7 @@ function Row({title, path, isLarge}) {
                 return (
                   <img className={`movie-card ${isLarge && "movie-card-large"}`}
                   key = {movie.id} 
-                  src = {`${baseImage}${movie.poster_path}`} 
+                  src = {`${baseImage}${isLarge ? movie.backdrop_path : movie.poster_path}`} 
                   alt = {movie.name}
                   ></img>
                 );

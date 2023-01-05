@@ -45,7 +45,7 @@ const categories = [
     },   
 ];
 
-export const getMovies = async (path) => {
+export const getMovie = async (path) => {
     try {        
         let url = `https://api.themoviedb.org/3${path}`;
         const response = await fetch(url);
