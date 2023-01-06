@@ -6,6 +6,14 @@ const baseImage = "https://image.tmdb.org/t/p/original/";
 
 function Row({title, path, isLarge}) {
   const [movies, setMovies] = React.useState([]);
+  const [trailerUrl, setTrailerUrl] = React.useState("")
+  const handleOnClick = (movie) =>{
+    if(trailerUrl){
+      setTrailerUrl("");
+    }else{
+      setTrailerUrl(url);
+    }
+  }
 
   const fetchMovies = async (_path) =>{
     try {
@@ -29,6 +37,7 @@ function Row({title, path, isLarge}) {
             {movies?.map((movie) =>{
                 return (
                   <img className={`movie-card ${isLarge && "movie-card-large"}`}
+                  onClick={()=> handleOnClick(movie)}
                   key = {movie.id} 
                   src = {`${baseImage}${isLarge ? movie.backdrop_path : movie.poster_path}`} 
                   alt = {movie.name}
@@ -36,6 +45,7 @@ function Row({title, path, isLarge}) {
                 );
             })}
         </div>
+        {trailerUrl && <ReactPlayer url ={trailerUrl} playing = {true}/>}
     </div>
   );
 }
