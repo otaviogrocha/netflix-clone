@@ -3,7 +3,7 @@
 [  ] Aumentar o espaço para o banner;<br>
 [  ] Avaliar necessidade de cor de fundo para o texto não camuflar com o banner;<br>
 [  ] Ver o que se assemelha com a netflix atual e tentar corrigir; <br>
-[  ] Adicionar botão ver mais na descrição (estudar a adição de um modal.);<br>
+[  ] Adicionar botão ver mais na descrição (estudar a adição de um modal);<br>
 
 
 # Getting Started with Create React App
