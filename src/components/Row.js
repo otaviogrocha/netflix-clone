@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
+import ReactPlayer from "react-player";
 import { getMovie } from "../api";
+import movieTrailer from "movie-trailer";
 import "./Row.css";
 
 const baseImage = "https://image.tmdb.org/t/p/original/";
@@ -11,7 +13,13 @@ function Row({title, path, isLarge}) {
     if(trailerUrl){
       setTrailerUrl("");
     }else{
-      setTrailerUrl(url);
+      movieTrailer(movie.title || movie.name || movie.original_name || "")
+      .then((url) => {
+        setTrailerUrl(url);
+      })
+      .catch((error) => {
+        console.error("Error fetching movie trailer: ", error)
+      })
     }
   }
 

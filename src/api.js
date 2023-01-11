@@ -40,7 +40,7 @@ const categories = [
     {
         name: "horror",
         title: "Terror",
-        path: `/discover/tv?api_key=${API_KEY}&with_genres=38`, 
+        path: `/discover/movie?api_key=${API_KEY}&with_genres=27`, 
         isLarge: false,
     },   
 ];
