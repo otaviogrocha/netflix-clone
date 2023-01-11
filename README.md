@@ -1,5 +1,5 @@
 
-## Atualizações:
+## Atualizações Futuras:
 [  ] Aumentar o espaço para o banner;<br>
 [  ] Avaliar necessidade de cor de fundo para o texto não camuflar com o banner;<br>
 [  ] Ver o que se assemelha com a netflix atual e tentar corrigir; <br>
