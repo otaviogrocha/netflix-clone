@@ -26,8 +26,9 @@ function Row({title, path, isLarge}) {
   const fetchMovies = async (_path) =>{
     try {
         const data = await getMovie(_path);
+        const movies = data?.results
         console.log("data ", data)
-        setMovies(data?.results);
+        setMovies(movies);
     } catch (error) {
         console.log("FetchMovies error: ", error)
     }

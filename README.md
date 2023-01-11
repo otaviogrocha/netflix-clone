@@ -1,3 +1,11 @@
+
+## Atualizações:
+[ ] Aumentar o espaço para o banner;
+[ ] Avaliar necessidade de cor de fundo para o texto não camuflar com o banner;
+[ ] Ver o que se assemelha com a netflix atual e tentar corrigir;
+[ ] Adicionar botão ver mais na descrição (estudar a adição de um modal.);
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
