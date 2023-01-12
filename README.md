@@ -1,6 +1,7 @@
 
 ## Atualizações Futuras:
 [  ] Aumentar o espaço para o banner;<br>
+[  ] Trocar o round position de center-center para outra propriedade de css para centralizar melhor a imagem; <br>
 [  ] Avaliar necessidade de cor de fundo para o texto não camuflar com o banner;<br>
 [  ] Ver o que se assemelha com a netflix atual e tentar corrigir; <br>
 [  ] Adicionar botão ver mais na descrição (estudar a adição de um modal);<br>
