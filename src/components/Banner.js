@@ -11,7 +11,7 @@ function Banner() {
 
       const data = await getMovie(netflixOriginalsCategory.path)
       const movies = data?.results;
-      const randomMovie = Math.floor(Math.random() * data.results.length);
+      const randomMovie = Math.floor(Math.random() * movies.length);
 
       setMovies(movies[randomMovie])
     } catch (error) {
@@ -33,6 +33,7 @@ function Banner() {
       backgroundSize: "cover",
       backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
       roundPosition: "center-center",
+      marginBottom: "20px",
     }}
     >
       <div className="banner-content">
