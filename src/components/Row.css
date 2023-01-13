@@ -11,7 +11,7 @@
 }
 
 .row-cards::-webkit-scrollbar{
-    display: none;
+    /* display: none; */
 }
 
 .movie-card{
