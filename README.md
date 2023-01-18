@@ -1,6 +1,7 @@
 
 ## Atualizações Futuras:
 [ x ] Aumentar o espaço para o banner;<br>
+[  ] Implementar uma opção de consumir a API sem usar promises (de forma síncrona e assíncrona);
 [  ] Ajustar posição da descrição;<br>
 [  ] Ajustar margin do título;<br>
 [  ] Trocar o round position de center-center para outra propriedade de css para centralizar melhor a imagem; <br>
